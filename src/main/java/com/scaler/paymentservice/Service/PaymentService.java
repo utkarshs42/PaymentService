@@ -8,5 +8,7 @@ public class PaymentService {
     public PaymentService(GatewaySelector gatewaySelector) {
         this.gatewaySelector = gatewaySelector;
     }
-
+    public String createPaymentLink(){
+        return gatewaySelector.getPaymentGateway().createPaymentLink();
+    }
 }

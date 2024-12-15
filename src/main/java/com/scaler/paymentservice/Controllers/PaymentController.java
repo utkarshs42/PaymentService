@@ -14,6 +14,6 @@ public class PaymentController {
 
     @PostMapping("/payment")
     public String createpaymentlink(){
-         return null;
+         return paymentService.createPaymentLink();
     }
 }
